@@ -12,11 +12,6 @@ const html = () => {
         .pipe(gulp.dest('./dist'));
 }
 
-const css = () => {
-    return gulp.src('./src/styles/*.css') 
-      .pipe(gulp.dest('./dist/styles')); 
-};
-
 const scss = () => {
     return gulp.src('./src/styles/**/*.scss')
         .pipe(sass().on('error', sass.logError))
@@ -47,9 +42,9 @@ const server = () => (
     })
 )
 
-gulp.task("build", gulp.series(claenDist, gulp.parallel(html, scss, moveImages, css)));
+gulp.task("build", gulp.series(claenDist, gulp.parallel(html, scss, moveImages)));
 
 gulp.task("dev", gulp.series(
-    gulp.parallel(html, scss, css, moveImages),
+    gulp.parallel(html, scss, ),
     gulp.parallel(server, watcher)
 ));

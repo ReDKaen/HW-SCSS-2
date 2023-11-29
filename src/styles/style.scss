@@ -3,3 +3,49 @@
     width: 100%;
     height: 800px;
 }
+
+.header__navbar-wrraper{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 150px;
+}
+
+.header__navbar-wrraper_menu{
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 200px;
+}
+
+.header__navbar-wrraper_menu-element{
+    display: flex;
+    width: auto;
+    height: 22px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 10px;
+    p{
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+}
+
+
+.header__title{
+    font-family: "DynaPuff", cursive;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    padding-top: 400px;
+    padding-left: 150px;
+}
