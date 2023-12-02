@@ -1,3 +1,5 @@
+
+
 .header{
     background: linear-gradient(252.94deg, #FFEE32 -13.48%, #D6D6D6 125.48%);
     height: 800px;
@@ -40,7 +42,6 @@
   font-family: "DynaPuff", cursive;
   font-size: 80px;
   font-weight: 700;
-  line-height: 96px;
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
@@ -51,6 +52,7 @@
 .info-section{
   height: 480px;
   background-color: #202020;
+  display: flex;
 }
 
 .info-section__element-wrraper{
@@ -58,8 +60,9 @@
   gap: 40px;
   display: flex;
   flex-direction: column;
-  padding-top: 140px;
+  padding-top: 130px;
   padding-left: 150px;
+  width: 490px;
 }
 
 .info-section__element-wrraper__title{
@@ -76,24 +79,135 @@
   color: #FFFFFF;
 }
 
+.info-section__element-wrraper__statistic{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-section__element-wrraper__statistic-element{
+  
+  span{
+    font-family: "DynaPuff", cursive;
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+    line-height: 57.6px;
+  }
+
+  p{
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color:#ffffff;
+    line-height: 21.86px;
+  }  
+}
+
+.info-section__ovals-first{
+  transform: rotate(-45deg);
+  border: 1px solid #737373;
+  width: 500px;
+  height: 260px;
+  border-radius: 50%;
+  padding-left: 40%;
+}
+
+.info-section__ovals-second{
+  border: 1px solid #737373;
+  width: 500px;
+  height: 260px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  padding-left: 40%;
+}
+
+.project-section{
+  height: 1460px;
+  background-color: #3C3C3C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-section__image{
+  background-color: #FFFEF2;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 24px;
+  height: 680px;
+  width: 80%;
+}
+
+.project-section__image-background{
+  width: 99%;
+  height: 558px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  background-image: url(../images/Frame_17.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 14px;
+  &::after{
+    content: url(../images/vector.svg);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 11px;
+    top: 11px;
+  }
+}
+
+.project-section__image__title{
+  color: #565656;
+  font-family: "DynaPuff", cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.project-section__image__subtitle{
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;  
+  font-weight: 700;
+}
+
+.project-section__image__wrraper{
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.project-section__image__wrraper-item{
+  width: 340px;
+  height: 545px;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+}
+
 @media (max-width: 768px) {
-    
-
-    .header__navbar-wrraper_menu{
-        padding-right: 50px;
-    }
-
-    .header__navbar-wrraper{
-        padding-left: 50px;
-    }
-    
-    .header__title{
-      display: flex;
-      flex-direction: column;
-      padding-top: 200px;
-      padding-left: 50px;
-    }
-    
+  .header__navbar-wrraper_menu{
+      padding-right: 50px;
+  }
+  .header__navbar-wrraper{
+      padding-left: 30px;
+  }
+  
+  .header__title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-left: 30px;
+    font-size: 80px;
+  }
+  .info-section__element-wrraper{
+    padding-left: 30px;
+  }
 }
 
 
@@ -102,6 +216,29 @@
     font-size: 48px;
     line-height: 57.6px;
     padding-top: 400px;
+    padding-left: 10px;
+  }
+  .header__navbar-wrraper{
+    padding-left: 10px;
+  }
+  .info-section__element-wrraper__title{
+    font-size: 34px;
+  }
+  .info-section__element-wrraper__subtitle{
+    max-width: 270px;
+    font-size: 15px;
+  }
+  .info-section__element-wrraper{
+    padding-left: 10px;
+  }
+  .info-section__element-wrraper__statistic-element{
+    span{
+      font-size: 30px;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 600;
+    }
   }
 }
 
