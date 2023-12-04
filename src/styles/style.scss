@@ -389,6 +389,12 @@
   justify-content: space-around;
 }
 
+@media (max-width: 1200px) {
+  .project-section__image {
+    width: 77.5%;
+}
+}
+
 @media (max-width: 768px) {
   .header__navbar-wrraper_menu{
       padding-right: 50px;
