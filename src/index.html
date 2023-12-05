@@ -10,13 +10,11 @@
 <body>
     
     <header class="header">
-        
-        <div class="header__navbar-wrraper ">
 
-            <div class="header__navbar-wrraper__logo">
-                <a href=""><img src="./images/Hope.png" alt=""></a>
-            </div>
-            <!-- <div class="header__navbar-wrraper_menu open">
+        <div class="header__navbar-wrraper" id="header_menu">
+                <a href="" class="header__navbar-wrraper__logo"><img src="./images/Hope.png" alt=""></a>
+    
+            <div class="header__navbar-wrraper_menu ">
                 <div class="header__navbar-wrraper_menu-element">
                     <img src="./images/Vector_portfolio.svg" alt="">
                     <p>Portfolio</p>
@@ -33,18 +31,24 @@
                     <img src="./images/Vector_contact.svg" alt="">
                     <p>Contact</p>
                 </div>
-            </div> -->
-        </div>
+                <div class="header__navbar-wrraper__burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
 
+        </div>
+    
         <div class="header__title">
             <span>Unleash</span>
             <span> Creativity<br></span>
             <span>Through </span>
             <span> Minimalism.</span> 
         </div> 
-        
+    
     </header>
-
     <section class="info-section">
             <div class="info-section__element-wrraper">
                 <div class="info-section__element-wrraper__title"><p>Meet Alex Johnsson</p></div>
@@ -64,12 +68,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="info-section__ovals-first">
-        
-            </div>
-            <div class="info-section__ovals-second">
-        
-            </div> -->
     </section>
 
     <section class="project-section">
@@ -135,5 +133,30 @@
         </div>
         
     </footer>
+
+    <script>
+        window.onscroll = function() {
+            if (window.innerWidth > 768) {
+                myFunction();
+            }
+        };
+
+        let header = document.getElementById("header_menu");
+
+        function myFunction() {
+            let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+            if (scrollTop > 100) {
+                header.style.background = "#202020";
+                header.style.paddingTop = "0px";
+                header.style.height = "70px"
+            } else {
+                header.style.backgroundColor = "transparent" 
+                header.style.paddingTop = "30px";
+                header.style.height = "60px"
+            }
+        }
+
+    </script>
 </body>
 </html>
